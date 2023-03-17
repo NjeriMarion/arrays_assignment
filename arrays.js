@@ -16,7 +16,11 @@ console.log(arr3.sort());
 // removing duplicates from an array
 var arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
 
-let duplicates = [ new Set(arr)];
+let duplicates = arr.filter((y, index)=> {
+     return arr.indexOf(y) ===index;
+
+});
+console.log(arr);
 console.log(duplicates);
 
 
